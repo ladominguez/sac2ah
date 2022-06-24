@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import argparse
-from obspy import read, write
+from obspy.core import read
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
