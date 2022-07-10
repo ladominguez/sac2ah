@@ -46,7 +46,7 @@ if __name__ == '__main__':
         fout.write('normaliztion:\t'+'%.2f'%normalization_factor+'\n')
         fout.write('calibration information\n')
         fout.write('pole.re		pole.im		zero.re		zero.im \n')
-        fout.write('%8.6e' % len(poles)+'\t'+'0.000000e+00'+'\t'+'%8.6e' % len(zeros)+'\t'+'0.000000e+00\n')
+        fout.write('%8.6e' % len(poles)+'\t'+'0.000000e+00'+'\t'+'%8.6e' % (len(zeros)+1)+'\t'+'0.000000e+00\n')
         for k in range(0, 29):
             try:
                 pole=poles[k]
